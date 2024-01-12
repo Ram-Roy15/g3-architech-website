@@ -151,14 +151,71 @@ main {
   align-items: center;
   margin-top: 50px;
 }
-.sponsor-name img {
+.features {
+  margin: 80px;
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  align-items: center;
 }
-
+.features-card-container .card {
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features-card-container .common-title {
+  border-left: 5px solid orange;
+  padding: 10px;
+}
+.ten-years {
+  border-radius: 8px;
+  background: #ff900e;
+  color: white;
+  width: 342px;
+  height: 150px;
+  padding: 20px;
+  position: relative;
+  bottom: 100px;
+}
+.features img {
+  margin-left: 70px;
+  height: 100%;
+  margin-top: 130px;
+}
+.ten-years h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+.ten-years p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin: 0;
+}
+footer {
+  border-radius: 8px;
+  background: #fff4e7;
+  padding: 10px;
+  margin: 50px;
+}
 /* responsive style small devices  */
 @media screen and (max-width: 576px) {
   nav,
-  nav > ul {
+  nav > ul,
+  .features {
     flex-direction: column;
+  }
+  .features img {
+    width: 100%;
+    margin: 0;
+  }
+  .ten-years {
+    position: static;
+    margin: 5px;
   }
   .team,
   .sponsor-name {
@@ -180,7 +237,9 @@ main {
   .team {
     padding: 20px;
   }
-  .sponsor-name {
+  .sponsor-name,
+  .features {
     flex-direction: column;
+    padding: 20px;
   }
 }
